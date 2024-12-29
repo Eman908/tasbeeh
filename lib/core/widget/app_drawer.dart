@@ -67,7 +67,7 @@ class AppDrawer extends StatelessWidget {
                   },
                 ),
                 SizedBox(
-                  height: 200,
+                  height: 300,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

@@ -51,7 +51,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         cubit.counterAdd();
                       },
                       child: Container(
-                        height: 370,
+                        height: 400,
                         width: double.infinity,
                         decoration: counterDecoration(color: cubit.color),
                         child: Center(
