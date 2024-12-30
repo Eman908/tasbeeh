@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tasbeeh/core/widget/drawer_style.dart';
+import 'package:tasbeeh/core/widget/drawer_decoration.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_cubit.dart';
 
 class HomeBackground extends StatelessWidget {
