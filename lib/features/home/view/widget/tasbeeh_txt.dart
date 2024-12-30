@@ -17,7 +17,7 @@ class TasbeehTxt extends StatelessWidget {
       height: 200,
       child: Text(
         cubit.tasbeehDefault,
-        style: textStyle(size: SizeApp.s24),
+        style: textStyle(size: SizeApp.s50),
         textAlign: TextAlign.center,
       ),
     );
