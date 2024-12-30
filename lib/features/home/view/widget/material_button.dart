@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tasbeeh/features/home/view/widget/button%20_txt.dart';
+import 'package:tasbeeh/core/style/size_app.dart';
+import 'package:tasbeeh/features/home/view/widget/text_style.dart';
 
 MaterialButton buttonMaterial(
     {required void Function()? onPressed,
@@ -13,7 +14,7 @@ MaterialButton buttonMaterial(
       children: [
         Text(
           txtBtn,
-          style: btnTxt(),
+          style: textStyle(size: SizeApp.s24),
         ),
         Icon(
           icon,

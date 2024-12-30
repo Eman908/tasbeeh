@@ -7,4 +7,3 @@ BoxDecoration counterDecoration({required Color color}) {
     borderRadius: BorderRadius.circular(400),
   );
 }
-// Color(0xff203342)
