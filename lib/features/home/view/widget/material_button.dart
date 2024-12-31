@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tasbeeh/core/style/color_app.dart';
 import 'package:tasbeeh/core/style/size_app.dart';
-import 'package:tasbeeh/features/home/view/widget/text_style.dart';
+import 'package:tasbeeh/features/home/view/style/text_style.dart';
 
 MaterialButton buttonMaterial(
     {required void Function()? onPressed,
@@ -8,7 +9,7 @@ MaterialButton buttonMaterial(
     required icon}) {
   return MaterialButton(
     height: 60,
-    color: Color(0xff203342),
+    color: ColorApp.colorBlue,
     onPressed: onPressed,
     child: Row(
       children: [
@@ -18,7 +19,7 @@ MaterialButton buttonMaterial(
         ),
         Icon(
           icon,
-          color: Colors.white,
+          color: ColorApp.colorWhite,
         ),
       ],
     ),

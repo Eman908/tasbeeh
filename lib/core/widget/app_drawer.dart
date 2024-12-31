@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tasbeeh/core/style/size_app.dart';
+import 'package:tasbeeh/core/style/string_app.dart';
+import 'package:tasbeeh/core/widget/colors_row.dart';
 import 'package:tasbeeh/core/widget/drawer_decoration.dart';
 import 'package:tasbeeh/core/widget/list_info.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_cubit.dart';
@@ -18,89 +21,54 @@ class AppDrawer extends StatelessWidget {
           padding: EdgeInsets.zero,
           children: [
             SizedBox(
-              height: 100,
+              height: SizeApp.s100,
             ),
             ListInfo(
-              txt: 'سبحان الله',
+              txt: StringApp.text1,
               onTap: () {
                 cubit.tasbeeh1();
               },
             ),
             SizedBox(
-              height: 24,
+              height: SizeApp.s24,
             ),
             ListInfo(
-              txt: 'الحمد لله',
+              txt: StringApp.text2,
               onTap: () {
                 cubit.tasbeeh2();
               },
             ),
             SizedBox(
-              height: 24,
+              height: SizeApp.s24,
             ),
             ListInfo(
-              txt: 'الله اكبر',
+              txt: StringApp.text3,
               onTap: () {
                 cubit.tasbeeh3();
               },
             ),
             SizedBox(
-              height: 24,
+              height: SizeApp.s24,
             ),
             ListInfo(
-              txt: 'لا اله الا الله',
+              txt: StringApp.text4,
               onTap: () {
                 cubit.tasbeeh4();
               },
             ),
             SizedBox(
-              height: 24,
+              height: SizeApp.s24,
             ),
             ListInfo(
-              txt: 'لا حول ولا قوة الا بالله',
+              txt: StringApp.text5,
               onTap: () {
                 cubit.tasbeeh5();
               },
             ),
             SizedBox(
-              height: 300,
+              height: SizeApp.s300,
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              spacing: 24,
-              children: [
-                GestureDetector(
-                  onTap: () {
-                    cubit.colorChangeB();
-                  },
-                  child: Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.black,
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    cubit.colorChangeD();
-                  },
-                  child: Container(
-                    height: 50,
-                    width: 50,
-                    color: Color(0xff203342),
-                  ),
-                ),
-                GestureDetector(
-                  onTap: () {
-                    cubit.colorChangeR();
-                  },
-                  child: Container(
-                    height: 50,
-                    width: 50,
-                    color: Colors.red,
-                  ),
-                )
-              ],
-            )
+            ColorsRow(cubit: cubit)
           ],
         ),
       ),

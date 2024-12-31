@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tasbeeh/core/style/color_app.dart';
+import 'package:tasbeeh/core/style/string_app.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_state.dart';
 
 class GetTasbeehCubit extends Cubit<GetTasbeehState> {
   GetTasbeehCubit() : super(GetTasbeehInitial());
 
   int x = 0;
-  String tasbeehDefault = 'سبحان الله';
-  Color color = Color(0xff203342);
+  String tasbeehDefault = StringApp.text1;
+  Color color = ColorApp.colorBlue;
 
   void counterAdd() {
     x++;
@@ -20,27 +22,27 @@ class GetTasbeehCubit extends Cubit<GetTasbeehState> {
   }
 
   void tasbeeh1() {
-    tasbeehDefault = 'سبحان الله';
+    tasbeehDefault = StringApp.text1;
     emit(Tasbeeh1());
   }
 
   void tasbeeh2() {
-    tasbeehDefault = 'الحمدلله';
+    tasbeehDefault = StringApp.text2;
     emit(Tasbeeh2());
   }
 
   void tasbeeh3() {
-    tasbeehDefault = 'الله اكبر ';
+    tasbeehDefault = StringApp.text3;
     emit(Tasbeeh3());
   }
 
   void tasbeeh4() {
-    tasbeehDefault = 'لا اله الا الله';
+    tasbeehDefault = StringApp.text4;
     emit(Tasbeeh4());
   }
 
   void tasbeeh5() {
-    tasbeehDefault = 'لا حول ولا قوة الا بالله';
+    tasbeehDefault = StringApp.text5;
     emit(Tasbeeh5());
   }
 
@@ -49,7 +51,7 @@ class GetTasbeehCubit extends Cubit<GetTasbeehState> {
       case 'سبحان الله':
         return tasbeeh2();
 
-      case 'الحمدلله':
+      case 'الحمد لله':
         return tasbeeh3();
 
       case 'الله اكبر ':
@@ -65,17 +67,17 @@ class GetTasbeehCubit extends Cubit<GetTasbeehState> {
   }
 
   void colorChangeB() {
-    color = Color(0xff000000);
+    color = ColorApp.colorBlack;
     emit(ColorTheme1());
   }
 
   void colorChangeD() {
-    color = Color(0xff203342);
+    color = ColorApp.colorBlue;
     emit(ColorTheme2());
   }
 
   void colorChangeR() {
-    color = Color.fromARGB(255, 255, 0, 0);
+    color = ColorApp.colorRed;
     emit(ColorTheme3());
   }
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:tasbeeh/core/style/size_app.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_cubit.dart';
 import 'package:tasbeeh/features/home/view/widget/counter_decor.dart';
-import 'package:tasbeeh/features/home/view/widget/text_style.dart';
+import 'package:tasbeeh/features/home/view/style/text_style.dart';
 
 class CounterContainer extends StatelessWidget {
   const CounterContainer({

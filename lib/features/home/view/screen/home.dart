@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:tasbeeh/core/style/size_app.dart';
 import 'package:tasbeeh/core/widget/app_drawer.dart';
 import 'package:tasbeeh/core/widget/main_appbar.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_cubit.dart';
@@ -34,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Column(
-                spacing: 40,
+                spacing: SizeApp.s40,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   TasbeehTxt(cubit: cubit),

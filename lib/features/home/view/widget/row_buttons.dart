@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tasbeeh/core/style/string_app.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_cubit.dart';
 import 'package:tasbeeh/features/home/view/widget/material_button.dart';
 
@@ -25,7 +26,7 @@ class RowButtons extends StatelessWidget {
             onPressed: () {
               cubit.next();
             },
-            txtBtn: 'التالي',
+            txtBtn: StringApp.text6,
             icon: Icons.arrow_forward),
       ],
     );
