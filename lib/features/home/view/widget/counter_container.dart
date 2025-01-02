@@ -11,16 +11,17 @@ class CounterContainer extends StatelessWidget {
   });
 
   final GetTasbeehCubit cubit;
-
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+    double containerSize = screenWidth * 0.8;
     return GestureDetector(
       onTap: () {
         cubit.counterAdd();
       },
       child: Container(
-        height: 380,
-        width: 380,
+        height: containerSize,
+        width: containerSize,
         decoration: counterDecoration(color: cubit.color),
         child: Center(
           child: Text(
