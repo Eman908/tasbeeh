@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:tasbeeh/core/style/size_app.dart';
 import 'package:tasbeeh/core/style/string_app.dart';
 import 'package:tasbeeh/core/widget/colors_row.dart';
 import 'package:tasbeeh/core/widget/drawer_decoration.dart';
-import 'package:tasbeeh/core/widget/list_info.dart';
+import 'package:tasbeeh/core/widget/drawer_text.dart';
 import 'package:tasbeeh/features/home/cubit/get_tasbeeh_cubit.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -15,62 +14,75 @@ class AppDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      child: Container(
-        decoration: drawerDecoration(alpha: 0.1),
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            SizedBox(
-              height: SizeApp.s100,
+      child: Column(
+        children: [
+          Expanded(
+            child: Container(
+              padding: EdgeInsets.only(top: 48, bottom: 32, right: 16),
+              decoration: drawerDecoration(alpha: 0.1),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                spacing: 24,
+                children: [
+                  TextButton(
+                    onPressed: () {
+                      cubit.tasbeeh1();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      StringApp.text1,
+                      style: drawerTextStyle(),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      cubit.tasbeeh2();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      StringApp.text2,
+                      style: drawerTextStyle(),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      cubit.tasbeeh3();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      StringApp.text3,
+                      style: drawerTextStyle(),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      cubit.tasbeeh4();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      StringApp.text4,
+                      style: drawerTextStyle(),
+                    ),
+                  ),
+                  TextButton(
+                    onPressed: () {
+                      cubit.tasbeeh5();
+                      Navigator.pop(context);
+                    },
+                    child: Text(
+                      StringApp.text5,
+                      style: drawerTextStyle(),
+                    ),
+                  ),
+                  Spacer(
+                    flex: 1,
+                  ),
+                  ColorsRow(cubit: cubit)
+                ],
+              ),
             ),
-            ListInfo(
-              txt: StringApp.text1,
-              onTap: () {
-                cubit.tasbeeh1();
-              },
-            ),
-            SizedBox(
-              height: SizeApp.s24,
-            ),
-            ListInfo(
-              txt: StringApp.text2,
-              onTap: () {
-                cubit.tasbeeh2();
-              },
-            ),
-            SizedBox(
-              height: SizeApp.s24,
-            ),
-            ListInfo(
-              txt: StringApp.text3,
-              onTap: () {
-                cubit.tasbeeh3();
-              },
-            ),
-            SizedBox(
-              height: SizeApp.s24,
-            ),
-            ListInfo(
-              txt: StringApp.text4,
-              onTap: () {
-                cubit.tasbeeh4();
-              },
-            ),
-            SizedBox(
-              height: SizeApp.s24,
-            ),
-            ListInfo(
-              txt: StringApp.text5,
-              onTap: () {
-                cubit.tasbeeh5();
-              },
-            ),
-            SizedBox(
-              height: SizeApp.s300,
-            ),
-            ColorsRow(cubit: cubit)
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

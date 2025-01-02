@@ -14,7 +14,7 @@ class ColorsRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.end,
       spacing: SizeApp.s24,
       children: [
         GestureDetector(
