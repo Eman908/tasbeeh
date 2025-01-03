@@ -3,8 +3,7 @@
 A new Flutter project.
 
 ## ScreenShots
-![Uploading Screenshot_1735506728.png…]()
-![Uploading Screenshot_1735506743.png…]()
+
 
 
 ## Getting Started
