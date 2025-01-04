@@ -18,7 +18,7 @@ class AppDrawer extends StatelessWidget {
         children: [
           Expanded(
             child: Container(
-              padding: EdgeInsets.only(top: 48, bottom: 32, right: 16),
+              padding: const EdgeInsets.only(top: 48, bottom: 32, right: 16),
               decoration: drawerDecoration(alpha: 0.1),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -74,7 +74,7 @@ class AppDrawer extends StatelessWidget {
                       style: drawerTextStyle(),
                     ),
                   ),
-                  Spacer(
+                  const Spacer(
                     flex: 1,
                   ),
                   ColorsRow(cubit: cubit)
