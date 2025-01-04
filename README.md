@@ -3,9 +3,10 @@
 A new Flutter project.
 
 ## ScreenShots
-![Uploading Screenshot_1735506728.png…]()
-![Uploading Screenshot_1735506743.png…]()
 
+![Screenshot_20250103-020343](https://github.com/user-attachments/assets/16745e14-25bd-4b9e-947b-b4b4a6f3ba97)
+
+![Screenshot_20250103-020349](https://github.com/user-attachments/assets/c544c5e9-b17b-47a6-80a9-c2b193bc1b99)
 
 ## Getting Started
 

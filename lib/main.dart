@@ -5,5 +5,5 @@ import 'package:tasbeeh/run_app.dart';
 
 void main() {
   Bloc.observer = MyBlocObserver();
-  runApp(Tasbeeh());
+  runApp(const Tasbeeh());
 }
